@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DetoxScreen</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif; background: #fff; color: #1d1d1f; line-height: 1.7; }
+        .container { max-width: 680px; margin: 0 auto; padding: 60px 20px; }
+        h1 { font-size: 2rem; margin-bottom: 4px; }
+        .app-name { color: #86868b; margin-bottom: 8px; font-size: 1rem; }
+        .updated { color: #86868b; font-size: 0.85rem; margin-bottom: 40px; }
+        h2 { font-size: 1.2rem; margin-top: 32px; margin-bottom: 12px; }
+        p, li { font-size: 0.95rem; color: #424245; margin-bottom: 12px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        a { color: #0071e3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back { display: inline-block; margin-bottom: 24px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../" class="back">&larr; Back</a>
+        <p class="app-name">DetoxScreen</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: March 24, 2026</p>
+
+        <p>At DetoxScreen, we take your privacy very seriously. This policy describes what information the app accesses, how it is used, and what control you have over it.</p>
+
+        <h2>1. Information We Access</h2>
+        <p>DetoxScreen accesses and stores the following data locally on your device:</p>
+
+        <h3 style="font-size: 1.05rem; margin-top: 20px; margin-bottom: 8px;">Routine Data</h3>
+        <p>We store your digital detox routines including name, schedule (start/end time), active days, and which apps or categories you choose to restrict. This data is used to apply and manage your screen time restrictions.</p>
+
+        <h3 style="font-size: 1.05rem; margin-top: 20px; margin-bottom: 8px;">Screen Time &amp; App Selection</h3>
+        <p>DetoxScreen uses Apple's Screen Time API (FamilyControls framework) to let you select which apps to restrict. The app receives <strong>opaque tokens</strong> representing your selected apps &mdash; it cannot see the names, identifiers, or any details of your installed apps. These tokens are stored locally to apply restrictions during your scheduled routines.</p>
+
+        <h3 style="font-size: 1.05rem; margin-top: 20px; margin-bottom: 8px;">Compliance &amp; Streak Data</h3>
+        <p>We store records of whether your routines were completed successfully, including compliance status and streak information. This data is used to display your statistics and motivate consistent habits.</p>
+
+        <h2>2. Information We Do NOT Collect</h2>
+        <p>DetoxScreen <strong>does not collect, transmit, or store</strong> any personal data on external servers. Specifically:</p>
+        <ul>
+            <li>We do not know which apps you have installed or which apps you restrict</li>
+            <li>We do not track your app usage or screen time duration</li>
+            <li>We do not send any data to external servers</li>
+            <li>We do not use analytics or tracking services</li>
+            <li>We do not collect device identifiers</li>
+            <li>We do not use advertising or ad networks</li>
+            <li>We do not share data with third parties</li>
+        </ul>
+
+        <h2>3. Screen Time API (FamilyControls)</h2>
+        <p>DetoxScreen uses Apple's FamilyControls, DeviceActivity, and ManagedSettings frameworks to provide app restriction functionality. Important details:</p>
+        <ul>
+            <li>You must explicitly authorize Screen Time access during onboarding</li>
+            <li>App selection uses Apple's standard picker &mdash; we only receive opaque tokens, never app names or bundle IDs</li>
+            <li>Restrictions are applied and removed automatically based on your schedules</li>
+            <li>You can revoke Screen Time authorization at any time from iOS Settings</li>
+        </ul>
+
+        <h2>4. Local Processing</h2>
+        <p>All data processing is performed <strong>exclusively on your device</strong>. DetoxScreen has no backend server. Your routine data, compliance records, and app selections never leave your iPhone.</p>
+
+        <h2>5. Data Storage</h2>
+        <p>DetoxScreen uses SwiftData (on-device database) stored in an App Group container shared between the app and its extensions. The app also uses UserDefaults for preferences such as:</p>
+        <ul>
+            <li>Onboarding state</li>
+            <li>Subscription status</li>
+            <li>Widget configuration</li>
+        </ul>
+        <p>All data is deleted when you uninstall the app.</p>
+
+        <h2>6. In-App Purchases</h2>
+        <p>Subscriptions are handled through Apple StoreKit. We do not have access to your payment information. Please refer to <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> for more information.</p>
+
+        <h2>7. Permissions</h2>
+        <p>DetoxScreen may request the following permissions, which you can revoke at any time from iOS Settings:</p>
+        <ul>
+            <li><strong>Screen Time (FamilyControls):</strong> required to select apps and apply restrictions during your routines</li>
+            <li><strong>Notifications:</strong> optional, used to remind you about upcoming routines</li>
+        </ul>
+
+        <h2>8. Widgets</h2>
+        <p>DetoxScreen offers Home Screen and Lock Screen widgets that display your active routine, next scheduled routine, and current streak. Widgets read data from the shared on-device database and do not transmit any information externally.</p>
+
+        <h2>9. Security</h2>
+        <p>Since no data is transmitted outside your device, the risk of data leakage is minimal. All information remains protected by iOS security measures (device encryption, sandboxing, App Group isolation, etc.).</p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>DetoxScreen is designed for individual adult users managing their own screen time. It is not intended for children under 13 and is not a parental control tool. We do not knowingly collect information from children.</p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this policy from time to time. Any changes will be posted on this page with an updated date.</p>
+
+        <h2>12. Contact</h2>
+        <p>If you have any questions about this privacy policy, you can contact us at:</p>
+        <p><a href="mailto:jmillacatalan@gmail.com">jmillacatalan@gmail.com</a></p>
+    </div>
+</body>
+</html>
